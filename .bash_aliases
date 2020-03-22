@@ -18,8 +18,10 @@ alias rgE='rvm gemset empty'
 
 alias rdc='rails db:create'
 alias rdm='rails db:migrate'
+alias rdr='rails db:rollback'
 alias rdi='rails db:create && rails db:migrate'
 alias rdis='rails db:create && rails db:migrate && rails db:seed'
+alias rdms='rails db:migrate:status'
 
 # ----------------------
 # Functions
