@@ -1,0 +1,5 @@
+# Remember to configure git that it uses your global gitignore file.
+#  For that run 'git config --global core.excludesfile ~/.gitignore_global'.
+# Details: https://git-scm.com/book/ru/v2/Настройка-Git-Конфигурация-Git
+
+.DS_Store
