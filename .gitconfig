@@ -1,5 +1,9 @@
 [core]
   editor = nano
+[color]
+        ui = true
+        status = auto
+        branch = auto
 [alias]
     lg = !"git lg1"
     lg1 = !"git lg1-specific"
