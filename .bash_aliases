@@ -26,11 +26,6 @@ alias rdms='rails db:migrate:status'
 # ----------------------
 # Functions
 # ----------------------
-# The name of the current branch
-#function current_branch() {
-#  git_current_branch
-#}
-
 #function rgnew() { rvm use $1@$2 --ruby-version --create }
 #function rgu() { rvm use $1@$2}
 
@@ -115,6 +110,11 @@ alias ls="command ls -GF"
 # ----------------------
 # Git Functions
 # ----------------------
+# The name of the current git branch
+parseGitBranch() {
+    git branch --show-current 2> /dev/null | sed -e "s/\(.*\)/ (\1)/"
+}
+
 # Git log find by commit message
 #function glf($1) { git log --all --grep="$1"; }
 
