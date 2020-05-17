@@ -60,6 +60,9 @@ alias gd='git diff'
 alias gi='git init'
 
 alias glg='git log'
+alias glg1='git lg1'
+alias glg2='git lg2'
+alias glg3='git lg3'
 alias gloga='git log --graph --oneline --decorate --all'
 alias gloa="git log --pretty=format:'%h(%H) Author:%an<%ae> %ad Commiter:%cn<%ce> %cd - %s' --graph"
 
@@ -82,11 +85,11 @@ alias grbc='git rebase --continue'
 alias grbi='git rebase -i'
 alias grbs='git rebase --skip'
 
-alias grts='git restore --staged'
-alias grtsa='git restore --staged .'
+alias grts='git restore --staged' # MacOS
+alias grtsa='git restore --staged .' # MacOS
 
-alias grt!='git restore'
-alias grta!='git restore .'
+alias grt!='git restore' # MacOS
+alias grta!='git restore .' # MacOS
 
 alias gs='git status'
 alias gsh='git show'
