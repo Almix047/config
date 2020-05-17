@@ -70,6 +70,7 @@ alias gloa="git log --pretty=format:'%h(%H) Author:%an<%ae> %ad Commiter:%cn<%ce
 
 alias gm='git merge'
 
+alias gf='git fetch'
 alias gu='git pull'
 alias guo='git pull origin'
 alias guom='git pull origin master'
