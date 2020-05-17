@@ -45,3 +45,6 @@ alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && kil
 # Always use color output for `ls`
 alias ls="ls -GF"
 alias ll="ls -alGF"
+
+alias unga='git restore --staged'
+alias ungaa='git restore --staged .'

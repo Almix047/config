@@ -83,14 +83,11 @@ alias grbc='git rebase --continue'
 alias grbi='git rebase -i'
 alias grbs='git rebase --skip'
 
-alias grts='git restore --staged' # MacOS
-alias grtsa='git restore --staged .' # MacOS
-
-alias grt!='git restore' # MacOS
-alias grta!='git restore .' # MacOS
-
 alias gs='git status'
 alias gsh='git show'
+
+alias unga='git reset HEAD'
+alias ungaa='git reset HEAD .'
 
 # ----------------------
 # Git Functions
