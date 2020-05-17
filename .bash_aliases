@@ -95,22 +95,6 @@ alias gs='git status'
 alias gsh='git show'
 
 # ----------------------
-# For MacOS Terminal
-# ----------------------
-# (Source: https://github.com/mathiasbynens/dotfiles/blob/master/.aliases)
-
-# Always enable colored `grep` output
-# Note: `GREP_OPTIONS="--color=auto"` is deprecated, hence the alias usage.
-alias grep='grep --color=auto'
-
-# Show/hide hidden files in Finder
-alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
-alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
-
-# Always use color output for `ls`
-alias ls="command ls -GF"
-
-# ----------------------
 # Git Functions
 # ----------------------
 # The name of the current git branch

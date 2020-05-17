@@ -16,7 +16,6 @@
 # Default MacOS PS1
 # https://discussions.apple.com/thread/7507996?answerId=29976083022#29976083022
 # PS1='\h:\W \u\$ '
-
 PS1='\[\e[0;35m\]\h@\u\[\e[0m\]: \[\e[1;35m\]\W\[\e[0m\]\[\e[1;32m\]' # host@user: folder
 PS1+='$(git branch --show-current 2> /dev/null | sed -e "s/\(.*\)/ (\1)/")' # show git branch function
 PS1+='\[\e[0m\]\$ ' # close color reset
@@ -29,3 +28,20 @@ PS1+='\[\e[0m\]\$ ' # close color reset
 # Default MacOS
 # LSCOLORS=exfxcxdxbxegedabagacad
 export LSCOLORS=gxFxhxDxbxhxhxhxhxcxcx
+
+# ----------------------
+# Aliases for MacOS Terminal
+# ----------------------
+# (Source: https://github.com/mathiasbynens/dotfiles/blob/master/.aliases)
+
+# Always enable colored `grep` output
+# Note: `GREP_OPTIONS="--color=auto"` is deprecated, hence the alias usage.
+alias grep='grep --color=auto'
+
+# Show/hide hidden files in Finder
+alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
+alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
+
+# Always use color output for `ls`
+alias ls="ls -GF"
+alias ll="ls -alGF"
