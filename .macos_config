@@ -1,3 +1,18 @@
+# Remember to configure the system to use this file.
+#  For that run this:
+
+# ---
+# if grep -iF "if [ -f ~/.macos_config ]; then" .bash_profile 1> /dev/null; then
+#     echo -e '\033[1m".macos_config" already included in ".bash_profile"\033[0m'
+# else
+#     echo -e '\nif [ -f ~/.macos_config ]; then . ~/.macos_config; fi' >> ~/.bash_profile
+#     echo -e '\033[1;32mSuccessfully.\n".macos_config" included in ".bash_profile"\033[0m'
+# fi
+# ---
+
+# ----------------------
+#
+# ----------------------
 # Default MacOS PS1
 # https://discussions.apple.com/thread/7507996?answerId=29976083022#29976083022
 # PS1='\h:\W \u\$ '
@@ -8,11 +23,9 @@ PS1+='\[\e[0m\]\$ ' # close color reset
 
 # export PS1='\[\e[0;35m\]\h@\u\[\e[0m\]: \[\e[1;35m\]\W\[\e[0m\]\[\e[1;32m\]$(git branch --show-current 2> /dev/null | sed -e "s/\(.*\)/ (\1)/")\[\e[0m\]\$ '
 
+# ----------------------
+#
+# ----------------------
 # Default MacOS
 # LSCOLORS=exfxcxdxbxegedabagacad
 export LSCOLORS=gxFxhxDxbxhxhxhxhxcxcx
-
-
-# parseGitBranch() {
-#     git branch --show-current 2> /dev/null | sed -e "s/\(.*\)/ (\1)/"
-# }
