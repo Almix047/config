@@ -52,8 +52,6 @@ alias gc!='git commit --amend'
 alias gcn!='git commit --amend --no-edit'
 
 alias gco='git checkout'
-#alias gcоb='git checkout -b' # Not working: '-bash: gcob: command not found'
-#alias gcоm='git checkout master' # Not working: '-bash: gcom: command not found'
 
 alias gd='git diff'
 
