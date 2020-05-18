@@ -93,7 +93,7 @@ alias ungaa='git reset HEAD .'
 # Git Functions
 # ----------------------
 # Git log find by commit message
-#function glf($1) { git log --all --grep="$1"; }
+glf() { if [ -n "$1" ]; then git log --all --grep="$1"; fi }
 
 # Git copy a remote branch to a local repository
-#function glf($1) { git checkout -b $1 origin/$1; }
+gcb() { if [ -n "$1" ]; then git checkout -b "$1" origin/"$1"; fi }
