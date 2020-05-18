@@ -92,11 +92,6 @@ alias ungaa='git reset HEAD .'
 # ----------------------
 # Git Functions
 # ----------------------
-# The name of the current git branch
-parseGitBranch() {
-    git branch --show-current 2> /dev/null | sed -e "s/\(.*\)/ (\1)/"
-}
-
 # Git log find by commit message
 #function glf($1) { git log --all --grep="$1"; }
 
