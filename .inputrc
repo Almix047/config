@@ -1,0 +1,12 @@
+# ~/.inputrc for nice bash history up-arrows. Create ~/.inputrc and fill it with this:
+
+# This allows you to search through your history using the up and down arrows.
+# i.e. type "cd /" and press the up arrow and you'll search through everything in your history that starts with "cd /"
+"\e[A": history-search-backward
+"\e[B": history-search-forward
+# The word will be partially completed to the point where there is ambiguity, and print all the completion in one step (press Tab).
+set show-all-if-ambiguous on
+# Readline performs filename matching and completion in a case-insensitive fashion.
+set completion-ignore-case on
+# Bash auto-completion highlighting
+set colored-stats on
