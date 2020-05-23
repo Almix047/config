@@ -3,6 +3,7 @@
 # ----------------------
 # Your public IP address
 #alias ip='curl icanhazip.com'
+alias hs='history | grep'
 
 alias bi='bundle install'
 alias gi='gem install'
